@@ -1,16 +1,19 @@
 .carousel-item img {
-height: 400px;
-object-fit: cover;
+  height: 400px;
+  object-fit: cover;
 }
 nav {
-    background-color: #212121;
+  background-color: #212121;
 }
 .auto-span {
-    font-weight: lighter;
+  font-weight: lighter;
 }
 .vip-span {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 .seccion-principal {
-    padding: 2rem;
+  padding: 2rem;
+}
+footer {
+  background-color: #212121;
 }
