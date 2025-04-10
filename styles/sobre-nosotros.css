@@ -1,0 +1,35 @@
+.team-member {
+    margin-bottom: 30px;
+}
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.social-icons {
+    margin-top: 15px;
+}
+.social-icons a {
+    margin-right: 10px;
+    color: #333;
+    font-size: 18px;
+    text-decoration: none;
+}
+.about-section {
+    padding: 50px 0;
+}
+.team-section {
+    padding: 50px 0;
+}
+.read-more-btn {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+}
+.ceiling-image {
+    height: 300px;
+    object-fit: cover;
+}
+nav {
+    background-color: #212121;
+}
