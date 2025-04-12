@@ -1,9 +1,10 @@
 .carousel-item img {
-  height: 400px;
+  height: 600px;
   object-fit: cover;
 }
 nav {
   background-color: #212121;
+  border-bottom: #f1a352 solid 3px;
 }
 .auto-span {
   font-weight: lighter;
@@ -11,9 +12,158 @@ nav {
 .vip-span {
   font-weight: bolder;
 }
-.seccion-principal {
-  padding: 2rem;
+.carousel{
+  border-bottom: #f1a352 solid 3px;
+  height: max-content;
 }
+
+/* Ajustes para la sección principal */
+.seccion-principal {
+  padding: 3rem 0;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+.seccion-principal h1 {
+  margin-bottom: 1rem;
+  text-align: start;
+}
+
+/* Ajuste para el contenedor de las tarjetas */
+.container.text-start {
+  max-width: 1126px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.row.align-items-start {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  gap: 60px;
+}
+
+.col-md-4 {
+  padding: 0;
+  flex: 1;
+}
+
+/* Ajustes para las tarjetas */
+.card {
+  width: 100%;
+  height: 350px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #f8f9fa;
+  font-weight: bold;
+  padding: 12px 15px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+  height: calc(100% - 56px);
+}
+
+.card-text {
+  margin-bottom: 1.5rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.btn {
+  align-self: flex-start;
+  padding: 8px 15px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #f1a352;
+  border-color: #f1a352;
+  color: white;
+}
+
 footer {
   background-color: #212121;
+  border-top: #f1a352 solid 3px;
+  padding: 20px 10rem;
+  color: white;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-logo {
+  flex: 1;
+}
+
+.footer-logo a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-links {
+  flex: 2;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-copyright {
+  flex: 1;
+  text-align: right;
+}
+
+footer .row {
+  padding: 0;
+  gap: 0;
+}
+
+.navbar .container-fluid {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 768px) {
+  .seccion-principal {
+    padding: 2rem;
+  }
+  
+  .row.align-items-start {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .card {
+    height: auto;
+    min-height: 300px;
+  }
 }
