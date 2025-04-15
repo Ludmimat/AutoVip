@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/styles/venta.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   </head>
   <body>
     <header>
@@ -48,50 +49,59 @@
         </div>
       </nav>
     </header>
+   
     <section class="container mt-4">
+      <h1> Ventas </h1>
+      <hr>
         <div class="row">
           <aside class="col-md-4 col-lg-3">
-            <h5>Filtro</h5>
-            <div class="mb-3">
-              <label for="filtroAno" class="form-label">Año</label>
-              <select class="form-select" id="filtroAno">
-                <option selected>Seleccionar...</option>
-                <option>2020</option>
-                <option>2021</option>
-                <option>2022</option>
-              </select>
+            <div class="card p-3 mb-3 bg-light">
+              <h5>Filtro</h5>
+              <hr>
+              <div class="mb-3">
+                <label for="filtroAno" class="form-label "><span class="font-weight-bold"> Año </span></label>
+                <select class="form-select" id="filtroAno">
+                  <option selected>Seleccionar...</option>
+                  <option>2020</option>
+                  <option>2021</option>
+                  <option>2022</option>
+                </select>
+              </div>
+          
+              <div class="mb-3">
+                <label for="filtroMarca" class="form-label font-weight-bold">Marca</label>
+                <select class="form-select" id="filtroMarca">
+                  <option selected>Seleccionar...</option>
+                  <option>Audi</option>
+                  <option>BMW</option>
+                  <option>Ford</option>
+                </select>
+              </div>
+          
+              <div class="mb-3">
+                <label for="filtroModelo" class="form-label">Modelo</label>
+                <select class="form-select" id="filtroModelo">
+                  <option selected>Seleccionar...</option>
+                </select>
+              </div>
+          
+              <div class="mb-3">
+                <label for="filtroEstado" class="form-label">Estado</label>
+                <select class="form-select" id="filtroEstado">
+                  <option selected>Seleccionar...</option>
+                  <option>Nuevo</option>
+                  <option>Usado</option>
+                </select>
+              </div>
+          
+              <button class="btn btn-warning w-100 mb-3 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" x="-3px" y="2px" width="14" height="14" viewBox="0 0 50 50" fill="#ffff">
+                  <path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path>
+                  </svg> Filtrar
+              </button>
+          
+             
             </div>
-    
-            <div class="mb-3">
-              <label for="filtroMarca" class="form-label">Marca</label>
-              <select class="form-select" id="filtroMarca">
-                <option selected>Seleccionar...</option>
-                <option>Audi</option>
-                <option>BMW</option>
-                <option>Ford</option>
-              </select>
-            </div>
-    
-            <div class="mb-3">
-              <label for="filtroModelo" class="form-label">Modelo</label>
-              <select class="form-select" id="filtroModelo">
-                <option selected>Seleccionar...</option>
-              </select>
-            </div>
-    
-            <div class="mb-3">
-              <label for="filtroEstado" class="form-label">Estado</label>
-              <select class="form-select" id="filtroEstado">
-                <option selected>Seleccionar...</option>
-                <option>Nuevo</option>
-                <option>Usado</option>
-              </select>
-            </div>
-    
-            <button class="btn btn-warning w-100 mb-3">
-              <i class="bi bi-search"></i> Filtrar
-            </button>
-    
             <button class="btn btn-outline-secondary w-100">
               $ Cambiar moneda
             </button>
@@ -102,16 +112,29 @@
             <div class="card mb-3" style="max-width: 1000px">
               <div class="row g-0">
                 <div class="col-md-4">
-                  <img src="/img/autos sale/audi_q5_2017.jpg" class="img-fluid rounded-start" alt="audi_q5_2017" />
+                  <img src="/img/autos sale/audi_q5_2017.jpg" class="img-fluid rounded-start h-100" alt="audi_q5_2017" />
                 </div>
                 <div class="col-md-8">
-                  <div class="card-body">
-                    <h5 class="card-title">Audi Q5</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                  <div class="card-body"> 
+                    <div class="d-flex justify-content-between">  
+                      <h5 class="card-title"> Audi Q5 </h5>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div>2017 | USD 92.000 </div>
+                        <div class="text-warning" >
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-half"></i>
+                          <i class="bi bi-star"></i>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, maiores laudantium? Veritatis, laboriosam nihil. Suscipit quis necessitatibus.</p>
                     <p class="card-text"><small class="text-muted">2017 | USD 92.000</small></p>
-                    <button class="btn btn-success">Comprar</button>
-                    <button class="btn btn-secondary">Más información</button>
-                    <button class="btn btn-outline-primary">Compartir</button>
+                    <button class="btn btn-success"> <svg width="16px" height="16px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M2.08416 2.7512C2.22155 2.36044 2.6497 2.15503 3.04047 2.29242L3.34187 2.39838C3.95839 2.61511 4.48203 2.79919 4.89411 3.00139C5.33474 3.21759 5.71259 3.48393 5.99677 3.89979C6.27875 4.31243 6.39517 4.76515 6.4489 5.26153C6.47295 5.48373 6.48564 5.72967 6.49233 6H17.1305C18.8155 6 20.3323 6 20.7762 6.57708C21.2202 7.15417 21.0466 8.02369 20.6995 9.76275L20.1997 12.1875C19.8846 13.7164 19.727 14.4808 19.1753 14.9304C18.6236 15.38 17.8431 15.38 16.2821 15.38H10.9792C8.19028 15.38 6.79583 15.38 5.92943 14.4662C5.06302 13.5523 4.99979 12.5816 4.99979 9.64L4.99979 7.03832C4.99979 6.29837 4.99877 5.80316 4.95761 5.42295C4.91828 5.0596 4.84858 4.87818 4.75832 4.74609C4.67026 4.61723 4.53659 4.4968 4.23336 4.34802C3.91052 4.18961 3.47177 4.03406 2.80416 3.79934L2.54295 3.7075C2.15218 3.57012 1.94678 3.14197 2.08416 2.7512Z" fill="#ffffff"></path> <path d="M7.5 18C8.32843 18 9 18.6716 9 19.5C9 20.3284 8.32843 21 7.5 21C6.67157 21 6 20.3284 6 19.5C6 18.6716 6.67157 18 7.5 18Z" fill="#ffffff"></path> <path d="M16.5 18.0001C17.3284 18.0001 18 18.6716 18 19.5001C18 20.3285 17.3284 21.0001 16.5 21.0001C15.6716 21.0001 15 20.3285 15 19.5001C15 18.6716 15.6716 18.0001 16.5 18.0001Z" fill="#ffffff"></path> </g></svg> Comprar</button>
+                    <button type="button" class="btn btn-outline-secondary"> <svg width="16px" height="16px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <title>plus-square</title> <desc>Created with Sketch Beta.</desc> <defs> </defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <g id="Icon-Set" sketch:type="MSLayerGroup" transform="translate(-100.000000, -1035.000000)" fill="#000000"> <path d="M130,1063 C130,1064.1 129.104,1065 128,1065 L104,1065 C102.896,1065 102,1064.1 102,1063 L102,1039 C102,1037.9 102.896,1037 104,1037 L128,1037 C129.104,1037 130,1037.9 130,1039 L130,1063 L130,1063 Z M128,1035 L104,1035 C101.791,1035 100,1036.79 100,1039 L100,1063 C100,1065.21 101.791,1067 104,1067 L128,1067 C130.209,1067 132,1065.21 132,1063 L132,1039 C132,1036.79 130.209,1035 128,1035 L128,1035 Z M122,1050 L117,1050 L117,1045 C117,1044.45 116.552,1044 116,1044 C115.448,1044 115,1044.45 115,1045 L115,1050 L110,1050 C109.448,1050 109,1050.45 109,1051 C109,1051.55 109.448,1052 110,1052 L115,1052 L115,1057 C115,1057.55 115.448,1058 116,1058 C116.552,1058 117,1057.55 117,1057 L117,1052 L122,1052 C122.552,1052 123,1051.55 123,1051 C123,1050.45 122.552,1050 122,1050 L122,1050 Z" id="plus-square" sketch:type="MSShapeGroup"> </path> </g> </g> </g></svg> Más información</button>
+                    <button type="button" class="btn btn-outline-secondary"> <svg fill="#000000" width="16px" height="16px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="share-alt" class="icon glyph"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M20,21H4a2,2,0,0,1-2-2V6A2,2,0,0,1,4,4H8A1,1,0,0,1,8,6H4V19H20V13a1,1,0,0,1,2,0v6A2,2,0,0,1,20,21Z"></path><path d="M21.62,6.22l-5-4a1,1,0,0,0-1.05-.12A1,1,0,0,0,15,3V4.19a9.79,9.79,0,0,0-7,7.65,1,1,0,0,0,.62,1.09A1,1,0,0,0,9,13a1,1,0,0,0,.83-.45C11,10.78,13.58,10.24,15,10.07V11a1,1,0,0,0,.57.9,1,1,0,0,0,1.05-.12l5-4a1,1,0,0,0,0-1.56Z"></path></g></svg> Compartir</button>
                   </div>
                 </div>
               </div>
@@ -257,7 +280,7 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit...
                       </p>
                       <p class="card-text">
-                        <small class="text-muted">2017 | USD 92.000</small>
+                        <small class="text-muted">2017 | USD 92.000 </small>
                       </p>
                       <button class="btn btn-success">Comprar</button>
                       <button class="btn btn-secondary">Más información</button>
